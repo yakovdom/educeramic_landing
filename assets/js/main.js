@@ -1,5 +1,5 @@
 
-const siteLabel = 'Студии керамики в вашей Образовательной Организации под ключ';
+const siteLabel = 'Студии керамики в Вашей образовательной организации "под ключ"';
 const textWalker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
 let textNode;
 while ((textNode = textWalker.nextNode())) {

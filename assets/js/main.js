@@ -9,7 +9,7 @@ while ((textNode = textWalker.nextNode())) {
 document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('click',()=>document.querySelector('.main-nav')?.classList.toggle('open'))});
 document.querySelectorAll('.slider').forEach(slider=>{const track=slider.querySelector('.slider-track');slider.querySelector('.prev')?.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.85,behavior:'smooth'}));slider.querySelector('.next')?.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.85,behavior:'smooth'}));});
 document.querySelectorAll('img').forEach(image=>{image.addEventListener('error',()=>{image.classList.add('image-missing');image.removeAttribute('src');});});
-const leadFormEndpoint = 'https://formsubmit.co/info@razvitiekeramiki.ru';
+const leadFormEndpoint = 'https://formsubmit.co/ooo.dhc.tvorec@gmail.com';
 const ensureHiddenInput = (form, name, value) => {
   let input = form.querySelector(`input[name="${name}"]`);
   if (!input) {

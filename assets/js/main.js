@@ -26,7 +26,9 @@ document.querySelectorAll('form.lead-form').forEach(form => {
   form.action = leadFormEndpoint;
   form.method = 'POST';
 
-  ensureHiddenInput(form, '_subject', `Новая заявка: ${title}`);
+  if (!form.querySelector('input[name="_subject"]')) {
+    ensureHiddenInput(form, '_subject', `Новая заявка: ${title}`);
+  }
   ensureHiddenInput(form, '_template', 'table');
   ensureHiddenInput(form, '_next', `${window.location.origin}/thanks.html`);
   ensureHiddenInput(form, '_url', window.location.href);

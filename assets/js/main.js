@@ -6,7 +6,9 @@ while ((textNode = textWalker.nextNode())) {
   textNode.nodeValue = textNode.nodeValue.replaceAll('Керамические студии', siteLabel);
 }
 
-document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('click',()=>document.querySelector('.main-nav')?.classList.toggle('open'))});
+const mainNav = document.querySelector('.main-nav');
+document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('click',()=>mainNav?.classList.toggle('open'))});
+mainNav?.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>mainNav.classList.remove('open'))});
 document.querySelectorAll('.slider').forEach(slider=>{const track=slider.querySelector('.slider-track');slider.querySelector('.prev')?.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.85,behavior:'smooth'}));slider.querySelector('.next')?.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.85,behavior:'smooth'}));});
 document.querySelectorAll('img').forEach(image=>{image.addEventListener('error',()=>{image.classList.add('image-missing');image.removeAttribute('src');});});
 const leadFormEndpoint = 'https://formsubmit.co/ooo.dhc.tvorec@gmail.com';

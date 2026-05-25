@@ -7,15 +7,22 @@
   <meta name="description" content="Типовые проекты студий и мастерских керамики для школ и детских садов: оборудование, обучение педагогов, методическое сопровождение.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css?v=lora-all">
 </head>
 <body>
 
 <header class="site-header">
-  <a class="brand" href="index.html" aria-label="На главную">
-    <span class="brand-mark">К</span><span>Керамические студии</span>
-  </a>
+  <div class="brand-stack">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand-mark">К</span><span>Керамические студии</span>
+    </a>
+    <div class="logo-row header-logo-row" aria-label="logos партнеров">
+      <img src="logos/logo_class_ceramics.png" alt="Лого Класс керамики" loading="lazy">
+      <img src="logos/logo_academy_ceramics.jpg" alt="Лого Академия керамики" loading="lazy">
+      <img src="logos/logo_ncrk.png" alt="Лого НЦРК" loading="lazy">
+    </div>
+  </div>
   <button class="menu-toggle" aria-label="Открыть меню">☰</button>
   <nav class="main-nav">
     <a class="active" href="index.html">Главная</a>
@@ -29,38 +36,33 @@
 <section id="top" class="hero">
   <div class="hero-content">
     <p class="eyebrow">Типовые проекты для образовательных организаций</p>
-    <h1>Студия керамики в школе или детском саду под ключ</h1>
+    <h1>Студия керамики "под ключ"</h1>
+    <div class="actions"><a class="btn btn-primary" href="https://educeramic.ru/detskiy-sad.html">Для детского сада</a><a class="btn btn-secondary" href="https://educeramic.ru/shkola.html">Для школы</a></div>
     <p class="lead">Комплектация мастерской, оборудование, материалы, подготовка педагогов и методическое сопровождение для запуска занятий.</p>
     <div class="actions"><a class="btn btn-primary" href="#consult">Получить бесплатную консультацию</a><a class="btn btn-secondary" href="tech.html">Технические требования</a></div>
-    
-<div class="logo-row" aria-label="Логотипы партнеров">
-  <img src="Логотипы/Лого_Класс_керамики.png" alt="Лого Класс керамики" loading="lazy">
-  <img src="Логотипы/Лого_Академия_керамики.jpg" alt="Лого Академия керамики" loading="lazy">
-  <img src="Логотипы/Лого_НЦРК.png" alt="Лого НЦРК" loading="lazy">
-</div>
   </div>
   <div class="hero-card">
-    <img class="hero-img" src="Сады/Расстановка_Детский_сад.jpg" alt="Расстановка студии керамики" loading="lazy" data-path="Сады/Расстановка_Детский_сад.jpg">
+    <img class="hero-img" src="gardens/kindergarten_layout.jpg" alt="Расстановка студии керамики" loading="lazy" data-path="gardens/kindergarten_layout.jpg">
   </div>
 </section>
 <section class="section">
   <div class="section-head"><p class="eyebrow">Выберите направление</p><h2>Комплектации для садов и школ</h2></div>
   <div class="choice-grid">
-    <article class="choice-card"><img class="" src="Сады/Детский_сад_меню.jpg" alt="Для детского сада" loading="lazy" data-path="Сады/Детский_сад_меню.jpg"><div><h3>Для детского сада</h3><p>Программа для детей 4–7 лет. Студия от 15 м², группа до 6 детей.</p><a class="btn btn-card" href="detskiy-sad.html">Подробнее</a></div></article>
-    <article class="choice-card"><img class="" src="Школы/Школа_меню.jpg" alt="Для школы" loading="lazy" data-path="Школы/Школа_меню.jpg"><div><h3>Для школы</h3><p>Мастерская для детей 7–16 лет. Несколько уровней оснащения под разные площади.</p><a class="btn btn-card" href="shkola.html">Подробнее</a></div></article>
+    <article id="for-kindergarten" class="choice-card"><img class="" src="gardens/kindergarten_menu.jpg" alt="Для детского сада" loading="lazy" data-path="gardens/kindergarten_menu.jpg"><div><h3>Для детского сада</h3><p>Программа для детей 4–7 лет. Студия от 15 м², группа до 6 детей.</p><a class="btn btn-card" href="detskiy-sad.html">Подробнее</a></div></article>
+    <article id="for-school" class="choice-card"><img class="" src="schools/school_menu.jpg" alt="Для школы" loading="lazy" data-path="schools/school_menu.jpg"><div><h3>Для школы</h3><p>Мастерская для детей 7–16 лет. Несколько уровней оснащения под разные площади.</p><a class="btn btn-card" href="shkola.html">Подробнее</a></div></article>
   </div>
 </section>
 <section class="section section-alt">
-  <div class="split"><div><p class="eyebrow">Закупки</p><h2>Поставки по удобному для учреждения формату</h2><p>Реализуем поставки по государственному контракту 44-ФЗ, 223-ФЗ, оферте поставщиков и прямой закупке.</p></div><div class="feature-grid"><div>44-ФЗ</div><div>223-ФЗ</div><div>Оферта</div><div>Прямая закупка</div></div></div>
+  <div class="split"><div><p class="eyebrow">Закупки</p><h2>Поставки по удобному для Вашей организации формату</h2><p>Реализуем поставки по государственному контракту 44-ФЗ, 223-ФЗ, оферте поставщиков и прямой закупке.</p></div><div class="feature-grid"><div>44-ФЗ</div><div>223-ФЗ</div><div>Оферта</div><div>Прямая закупка</div></div></div>
 </section>
 <section class="section"><div class="benefits"><div><h3>Готовая комплектация</h3><p>Подбор оборудования, материалов и модулей занятий.</p></div><div><h3>Обучение педагогов</h3><p>Подготовка очно и онлайн для запуска занятий.</p></div><div><h3>Методическая поддержка</h3><p>Программы, конспекты уроков и консультации.</p></div></div></section>
 <section id="consult" class="section form-section">
-<form id="main-consult" class="lead-form" action="#" method="post">
+<form id="main-consult" class="lead-form" action="https://formsubmit.co/info@razvitiekeramiki.ru" method="POST">
   <h3>Получить бесплатную консультацию</h3>
   <label>Имя<input name="name" type="text" placeholder="Ваше имя"></label>
   <label>Телефон<input name="phone" type="tel" placeholder="+7"></label>
   <label>Email<input name="email" type="email" placeholder="mail@example.ru"></label>
-  <label>Организация<input name="org" type="text" placeholder="Школа / детский сад"></label>
+  <label>Наименование организации<input name="org" type="text" placeholder="Школа / детский сад"></label>
   <label>Комментарий<textarea name="comment" rows="3" placeholder="Кратко опишите задачу"></textarea></label>
   <button class="btn btn-primary" type="submit">Отправить заявку</button>
 </form></section>
@@ -68,10 +70,9 @@
 <footer class="footer">
   <div>
     <strong>Керамические студии для образовательных организаций</strong>
-    <p>Фото и логотипы: <a href="https://disk.yandex.ru/d/aRTiLwVQHPqh8w" target="_blank" rel="noopener">архив на Яндекс.Диске</a>. Скачайте архив и положите папки рядом с HTML-файлами.</p>
   </div>
   <a href="#top">Наверх ↑</a>
 </footer>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/main.js?v=site-update"></script>
 </body>
 </html>

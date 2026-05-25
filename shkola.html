@@ -37,13 +37,14 @@
 </div></section>
 <section id="consult" class="section form-section"><div class="section-head"><h2>Получить консультацию и расчет</h2><p>Подберем помещение, проект мастерской и персональную комплектацию под задачи организации.</p></div>
 <form id="school-form" class="lead-form" action="https://formsubmit.co/ooo.dhc.tvorec@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Заявка с EDUCERAMIC_SCHOOL">
   <h3>Узнать подробнее — школа</h3>
   <label>Имя<input name="name" type="text" placeholder="Ваше имя"></label>
   <label>Телефон<input name="phone" type="tel" placeholder="+7"></label>
   <label>Email<input name="email" type="email" placeholder="mail@example.ru"></label>
   <label>Наименование организации<input name="org" type="text" placeholder="Название школы / организации"></label>
   <label>Вариант комплектации<select name="Вариант комплектации" required>
-    <option value="">Выберите вариант</option>
+    <option value="" selected disabled hidden>Выберите вариант</option>
     <option value="Минимум">Минимум</option>
     <option value="Старт">Старт</option>
     <option value="Оптимум">Оптимум</option>
@@ -59,6 +60,6 @@
   </div>
   <a href="#top">Наверх ↑</a>
 </footer>
-<script src="assets/js/main.js?v=forms-gmail"></script>
+<script src="assets/js/main.js?v=forms-menu-close"></script>
 </body>
 </html>

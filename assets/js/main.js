@@ -6,10 +6,12 @@ while ((textNode = textWalker.nextNode())) {
   textNode.nodeValue = textNode.nodeValue.replaceAll('Керамические студии', siteLabel);
 }
 
-document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('click',()=>document.querySelector('.main-nav')?.classList.toggle('open'))});
+const mainNav = document.querySelector('.main-nav');
+document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('click',()=>mainNav?.classList.toggle('open'))});
+mainNav?.querySelectorAll('a').forEach(link=>{link.addEventListener('click',()=>mainNav.classList.remove('open'))});
 document.querySelectorAll('.slider').forEach(slider=>{const track=slider.querySelector('.slider-track');slider.querySelector('.prev')?.addEventListener('click',()=>track.scrollBy({left:-track.clientWidth*.85,behavior:'smooth'}));slider.querySelector('.next')?.addEventListener('click',()=>track.scrollBy({left:track.clientWidth*.85,behavior:'smooth'}));});
 document.querySelectorAll('img').forEach(image=>{image.addEventListener('error',()=>{image.classList.add('image-missing');image.removeAttribute('src');});});
-const leadFormEndpoint = 'https://formsubmit.co/info@razvitiekeramiki.ru';
+const leadFormEndpoint = 'https://formsubmit.co/ooo.dhc.tvorec@gmail.com';
 const ensureHiddenInput = (form, name, value) => {
   let input = form.querySelector(`input[name="${name}"]`);
   if (!input) {
@@ -26,7 +28,9 @@ document.querySelectorAll('form.lead-form').forEach(form => {
   form.action = leadFormEndpoint;
   form.method = 'POST';
 
-  ensureHiddenInput(form, '_subject', `Новая заявка: ${title}`);
+  if (!form.querySelector('input[name="_subject"]')) {
+    ensureHiddenInput(form, '_subject', `Новая заявка: ${title}`);
+  }
   ensureHiddenInput(form, '_template', 'table');
   ensureHiddenInput(form, '_next', `${window.location.origin}/thanks.html`);
   ensureHiddenInput(form, '_url', window.location.href);
